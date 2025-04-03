@@ -44,7 +44,7 @@ export default class ListTemplate implements DOMList {
 
       const button = document.createElement("button") as HTMLButtonElement;
       button.className = "button";
-      button.textContent = "X";
+      button.innerHTML = `<i class="fa fa-trash"></i>`;
       li.append(button);
 
       button.addEventListener("click", () => {
